@@ -12,6 +12,7 @@ nav a {
 h1 {
     margin: 10px;
     text-align: center;
+    color: #000;
 }
 
 h2 {
@@ -19,7 +20,7 @@ h2 {
 }
 
 main {
-    width: 840px;
+    max-width: 840px;
 }
 
 p {
@@ -44,7 +45,10 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 0;
     box-shadow: 0 0 30px #333;
+
 }
 
 footer {
