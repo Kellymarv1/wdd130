@@ -35,7 +35,7 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--accent1-color);
+    color: white;
     text-align: center;
     background-color: steelblue;
     padding: 10px;
@@ -48,6 +48,11 @@ section,
 article {
     margin: 4px;
     padding: 4px;
+}
+
+footer p,
+section p {
+    color: black;
 }
 
 .socialmedia a {
