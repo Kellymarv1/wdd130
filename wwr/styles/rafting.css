@@ -80,3 +80,56 @@ article {
     float: right;
     width: 125px;
 }
+
+/* Goal Section - Blue box with text + image */
+.goal-section {
+    background-color: #1e3a8a;
+    /* Nice blue like the example */
+    color: white;
+    padding: 2rem 1rem;
+    margin: 2rem auto;
+    width: 840px;
+    /* matches your other content */
+}
+
+.goal-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.goal-container p {
+    flex: 1;
+    margin: 0;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.small-image {
+    width: 220px;
+    height: auto;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+/* Mobile friendly */
+@media (max-width: 768px) {
+    .goal-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .small-image {
+        width: 70%;
+        max-width: 300px;
+    }
+}
+
+/* Clean up the hero article (remove old positioning) */
+.hero article {
+    display: none;
+    /* hide the old one inside hero */
+}
