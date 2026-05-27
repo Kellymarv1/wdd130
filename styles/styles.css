@@ -9,25 +9,84 @@ body {
     font-family: Roboto, Arial, sans-serif;
 }
 
+header,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 nav {
     background-color: steelblue;
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
     padding: 10px;
     display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;/% shorthand for white %/
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+    ;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;
+}
+
+main {
+    grid-column: 2;
+    margin: 1rem;
 }
 
 h1 {
     margin: 10px;
     text-align: center;
     color: #000;
+    border-bottom: 2px solid #000;
+    padding-bottom: 1px;
 }
 
 h2 {
-    border-bottom: 1px solid #222;
+    display: block;
+    font-size: 1.5em;
+    scroll-margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    scroll-margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 main {
@@ -49,6 +108,10 @@ aside {
     position: relative;
 }
 
+aside {
+    display: block;
+}
+
 aside img {
     width: 200px;
     height: auto;
@@ -56,8 +119,8 @@ aside img {
 
 aside h2 {
     position: absolute;
-    top: 10px;
-    right: 100px;
+    top: 15px;
+    left: 125px;
 
 }
 
