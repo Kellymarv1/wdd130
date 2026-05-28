@@ -3,12 +3,12 @@
     /* White */
     --secondary-color: black;
     /* Black */
-    --accent1-color: #264653;
-    /* dark slate blue */
+    --accent1-color: gold;
+    /* Light Gold */
     --accent2-color: #0f4c5c;
     /* Deep Teal */
     --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
+    --body-font: Arial, italic smaller sans-serif, sans-serif;
 }
 
 * {
@@ -22,7 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: gold;
+    background-color: var(--accent1-color);
     /* Purple background */
     padding: 15px 30px;
 }
@@ -237,17 +237,17 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 5px;
-    background-color: gold;
+    background-color: var(--accent1-color);
     padding: 15px 10px;
     border-top: 1px solid #ddd;
     margin-top: 20px;
-    ;
 }
 
 footer p {
     flex: 1;
     margin: 0;
     text-align: center;
+    font: var(--body-font);
 }
 
 .socialmedia {
