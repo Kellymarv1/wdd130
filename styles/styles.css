@@ -68,7 +68,7 @@ footer {
 
 main {
     grid-column: 2;
-    margin: 1rem;
+    margin: 3rem;
 }
 
 h1 {
@@ -104,7 +104,7 @@ aside {
     padding: 1rem;
     background-color: #eee;
     color: #333;
-    text-align: center;
+    text-align: left;
     position: relative;
 }
 
@@ -113,7 +113,7 @@ aside {
 }
 
 aside img {
-    width: 200px;
+    width: 280px;
     height: auto;
 }
 

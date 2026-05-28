@@ -18,13 +18,41 @@
 }
 
 header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
     background-color: var(--primary-color);
     color: var(--accent1-color);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 100px;
 }
 
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 header,
@@ -37,14 +65,13 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: black;
     text-align: center;
-    background-color: var(--accent2-color);
     padding: 10px;
 
 }
 
-nav,
+h2 nav,
 p,
 section,
 article {
@@ -57,16 +84,6 @@ section p {
     color: var(--secondary-color);
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
 .hero {
     position: relative;
 }
@@ -74,29 +91,28 @@ section p {
 .hero img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 250px;
 }
 
 .hero h1 {
     position: absolute;
-    top: 35px;
+    top: 10px;
     width: 100%;
     padding: 1px;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent2-color);
-    color: var(--primary-color);
+    color: black;
     /* white text - make sure there is enough contrast with the background-color */
 }
 
 .hero article {
     position: absolute;
-    bottom: 30px;
+    bottom: 70px;
     left: 30px;
     right: 30px;
     background-color: var(--accent2-color);
     border-radius: 2px;
     opacity: 0.8;
+    height: 40%;
 }
 
 .hero article p {
@@ -109,4 +125,130 @@ section p {
     margin-left: 10px;
     border-radius: 8px;
     padding: 8px;
+    height: 100px;
+}
+
+/* ====================== HISTORY SECTION ====================== */
+.history-section {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: start;
+    /* Changed to 'start' for better text alignment */
+    gap: 2.5rem;
+    padding: 1rem 0;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.history-section h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 1rem;
+    /* Reduced gap from title to content */
+    font-size: 2.5rem;
+}
+
+/* Logo */
+.history-logo {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    /* Vertically centers the logo */
+}
+
+.history-logo img {
+    width: 165px;
+    height: auto;
+    background-color: #1e40af;
+    padding: 1.8rem 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Text blocks */
+.history-text p {
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* Responsive - Stack on smaller screens */
+@media (max-width: 992px) {
+    .history-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .history-logo img {
+        margin: 0 auto;
+    }
+}
+
+/* === ADVENTURE AWAITS YOU - HORIZONTAL ROW === */
+.adventure-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1px;
+    justify-content: left;
+    margin: 1px auto;
+    padding: 1px;
+    max-width: 1200px;
+    background-color: white;
+}
+
+figure {
+    flex: 1 1 180px;
+    max-width: 180px;
+    margin: 0;
+    background: white;
+    padding: 10px;
+    text-align: center;
+}
+
+figure img {
+    width: 80%;
+    height: 130px;
+    object-fit: cover;
+}
+
+figcaption {
+    color: black;
+    padding: 1px 1px;
+    margin-top: 1px;
+    font: italic smaller sans-serif;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: gold;
+    padding: 10px 5px;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+footer p {
+    flex: 1;
+    margin: 0;
+    text-align: center;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: block;
 }
