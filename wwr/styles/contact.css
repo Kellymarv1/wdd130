@@ -126,6 +126,58 @@ h2 {
     height: 300px;
 }
 
+form {
+    padding: 1.5rem;
+}
+
+form > div {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    width: 120px;
+    margin: 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    flex: 1;
+    min-width: 0;
+    padding: 0.25rem;
+    box-sizing: border-box;
+    width: auto;
+}
+
+input div {
+    display: block;
+}
+
+fieldset {
+    margin-bottom: 1rem;
+    border: none;
+    padding: 0;
+}
+
+fieldset div {
+    margin-bottom: 0.5rem;
+}
+
+fieldset label,
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    display: inline;
+}
+
+button {
+    padding: 0.2rem 6.5rem;
+    cursor: pointer;
+}
+
 /* === ADVENTURE AWAITS YOU - HORIZONTAL ROW === */
 .adventure-row {
     display: flex;
