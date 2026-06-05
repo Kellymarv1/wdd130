@@ -121,6 +121,11 @@ h2 {
     align-items: start;
 }
 
+.map {
+    width: 350px;
+    height: 300px;
+}
+
 /* === ADVENTURE AWAITS YOU - HORIZONTAL ROW === */
 .adventure-row {
     display: flex;
