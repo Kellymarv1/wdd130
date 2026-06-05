@@ -126,53 +126,63 @@ h2 {
     height: 300px;
 }
 
-form {
-    padding: 1.5rem;
-}
-
-form > div {
+/* form layout: each direct child row keeps small width, use grid within fieldset */
+.contact-form {
     display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
+    flex-direction: column;
+    gap: 0.85rem;
+    max-width: 420px;
+    margin-right: 1rem;
 }
 
-label {
-    display: block;
-    width: 120px;
-    margin: 0;
+#name,
+#email {
+    margin: 2px 3rem 1px;
+    padding: 6px;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    flex: 1;
-    min-width: 0;
-    padding: 0.25rem;
-    box-sizing: border-box;
-    width: auto;
-}
-
-input div {
-    display: block;
-}
-
-fieldset {
-    margin-bottom: 1rem;
+/* fieldset: two-column grid: label cell + controls cell */
+.purpose-fieldset {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0.5rem;
+    align-items: start;
     border: none;
     padding: 0;
 }
 
-fieldset div {
-    margin-bottom: 0.5rem;
+/* radios stacked inside the controls cell */
+.radios {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-fieldset label,
-input[type="checkbox"] + label,
-input[type="radio"] + label {
-    display: inline;
+/* make message textarea span full form width */
+.message-row {
+    display: block;
+    /* keeps label + textarea in flow; override below */
 }
 
+#message {
+    width: 90%;
+    box-sizing: border-box;
+    height: 4rem;
+}
+
+/* newsletter row span full width */
+.newsletter {
+    display: block;
+    width: 100%;
+}
+
+/* ensure checkbox label sits to the right but the whole row is full width */
+.newsletter label {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+/* ...existing code... */
 button {
     padding: 0.2rem 6.5rem;
     cursor: pointer;
