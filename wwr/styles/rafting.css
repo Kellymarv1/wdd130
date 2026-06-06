@@ -128,7 +128,7 @@ section p {
 
 .map {
     width: 360px;
-    height: 355px;
+    height: 318px;
 }
 
 /* form layout: each direct child row keeps small width, use grid within fieldset */
