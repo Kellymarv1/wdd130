@@ -119,6 +119,9 @@ section p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    text-align: center;
+    background: white;
+    margin: 0;
 }
 
 .grid-container img {
@@ -142,7 +145,7 @@ section p {
 }
 
 .cta p {
-    color: #f0f0f0;
+    color: peru;
 }
 
 .hero .cta {
@@ -150,6 +153,30 @@ section p {
     bottom: 25rem;
     left: 41%;
     padding: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th {
+    background-color: #f0c14e;
+    color: black;
+    padding: 12px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
 }
 
 /* ====================== GRID LAYOUT ====================== */
