@@ -125,7 +125,7 @@ section p {
     gap: 20px;
     text-align: center;
     background: white;
-    margin: 0;
+    margin: 60px;
 }
 
 .grid-container img {
@@ -184,8 +184,6 @@ tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-// ...existing code...
-
 /* ====================== TRIP CARDS ====================== */
 
 .trip-card {
@@ -216,8 +214,6 @@ tr:nth-child(even) {
     font-size: 0.95rem;
     text-align: center;
 }
-
-// ...existing code...
 
 /* ====================== GRID LAYOUT ====================== */
 .grid {
