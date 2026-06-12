@@ -102,6 +102,10 @@ h2 {
     padding: 10px 0;
 }
 
+h5 {
+    font-size: 1.52rem;
+}
+
 h2 nav,
 p,
 section,
@@ -117,7 +121,7 @@ section p {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     text-align: center;
     background: white;
@@ -125,9 +129,10 @@ section p {
 }
 
 .grid-container img {
-    width: 50%;
+    width: 70%;
     height: 120px;
     object-fit: cover;
+    border: 3px solid coral;
 }
 
 .cta {
@@ -138,14 +143,14 @@ section p {
 
 .cta a {
     padding: 2px 11px;
-    background-color: #f0c14e;
-    border: 1px solid #f0c14e;
+    background-color: coral;
+    border: 1px solid coral;
     border-radius: 6px;
     color: #2C2C2C;
 }
 
 .cta p {
-    color: peru;
+    color: white;
 }
 
 .hero .cta {
@@ -204,7 +209,7 @@ tr:nth-child(even) {
 
 #name,
 #email {
-    margin: 2px 3rem 1px;
+    margin: 1px 3rem 7px;
     padding: 6px;
     width: 12.6rem;
 }
@@ -227,7 +232,8 @@ tr:nth-child(even) {
 
 /* make message textarea span full form width */
 .message-row {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 #message {
@@ -248,6 +254,16 @@ tr:nth-child(even) {
     margin-left: 0.5rem;
 }
 
+.newsletter-section {
+    grid-column: 1 / -1;
+    /* span full row so it's centered under the grid */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
 button {
     padding: 0.2rem 6.5rem;
     cursor: pointer;
@@ -264,11 +280,12 @@ button {
 
 .hero h1 {
     position: absolute;
-    top: 10px;
+    top: 15px;
     width: 100%;
     padding: 1px;
     text-align: center;
-    color: #f0c14e;
+    color: coral;
+    left: 55px;
 }
 
 .hero article {
