@@ -149,10 +149,6 @@ section p {
     color: #2C2C2C;
 }
 
-.cta p {
-    color: white;
-}
-
 .hero .cta {
     position: absolute;
     bottom: 25rem;
@@ -316,7 +312,7 @@ button {
     padding: 1px;
     text-align: center;
     color: chocolate;
-    left: 55px;
+    left: 95px;
 }
 
 .hero article {
